@@ -30,7 +30,7 @@ jobs:
 
       - name: Automatically fix code style with autopep8
         run: |
-          autopep8 --in-place --aggressive --aggressive .
+          autopep8 --in-place --aggressive src/*.py
 
       - name: Lint Python code with flake8
         run: |
