@@ -1,5 +1,6 @@
 requests==2.32.3
 beautifulsoup4==4.12.3
 pytest==7.4.0
-pytest-mock==3.14.0 
+pytest-mock==3.14.0
 flake8==6.1.0
+autopep8
