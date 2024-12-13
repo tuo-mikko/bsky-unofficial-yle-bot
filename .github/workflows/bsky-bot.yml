@@ -24,9 +24,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Install autopep8 and flake8
+        run: |
+          pip install autopep8 flake8
+
+      - name: Automatically fix code style with autopep8
+        run: |
+          autopep8 --in-place --aggressive src/*.py tests/*.py
+
       - name: Lint Python code with flake8
         run: |
-          pip install flake8
           flake8 .
 
       - name: Run tests with pytest

@@ -1,0 +1,4 @@
+[flake8]
+per-file-ignores =
+    tests/*.py: E501,
+    src/*.py: E501,
