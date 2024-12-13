@@ -4,7 +4,7 @@ Despite growing user numbers, the social media platform Bluesky still lacks finn
 
 The idea is to first query the finnish public broadcasting company YLE's webpage for most recent news, save the title and link of a new article, and save them into a database. From there, they can be posted to Bluesky.
 
-So far the bot only has the ability to fetch and parse the contents of the latest YLE news, but next I will be working on the database and bot logic itself.
+So far the bot only has the ability to fetch and parse the contents of the latest YLE news, but next I will be working on the database and bot logic itself. For now it runs just locally, but once I have it up and running I plan to run it in cloud.
 
 You can set up and run the bot by if you have Python 3.13.1 installed, have cloned the repo and have navigated to the root directory. After that, finish setup with.
 
