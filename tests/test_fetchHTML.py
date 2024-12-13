@@ -3,8 +3,6 @@ from unittest import mock
 from fetchHTML import fetch_content
 
 # Test for succesful fetch
-
-
 def test_fetch_content_success():
     url = "https://yle.fi/uutiset/tuoreimmat"
     html_content = "<html><body><h1>Example Domain</h1></body></html>"
@@ -17,7 +15,6 @@ def test_fetch_content_success():
 
         assert result == html_content
         mock_get.assert_called_once_with(url)
-
 
 # Test for a 404 error
 def test_fetch_content_404_error():

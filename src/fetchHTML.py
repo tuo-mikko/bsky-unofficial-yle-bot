@@ -1,8 +1,7 @@
 import requests
 import datetime
 
-
-def fetch_content(url: str):
+def fetch_content(url: str) -> str:
     """
     Fetches content from the given URL.
 
@@ -10,7 +9,7 @@ def fetch_content(url: str):
     - url (str): The URL to fetch content from.
 
     Returns:
-    - str: The HTML content of the page, None if an error occurs.
+    - str: The HTML content of the page, None if an error happens.
     """
     try:
         response = requests.get(url)
@@ -20,6 +19,3 @@ def fetch_content(url: str):
     except requests.exceptions.RequestException as e:
         print(f"{datetime.datetime.now()} Error fetching the URL {url}: {e}")
         return None
-
-
-print("Yeah")
