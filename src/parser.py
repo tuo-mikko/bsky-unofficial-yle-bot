@@ -1,4 +1,3 @@
-import requests, fetchHTML
 from datetime import datetime
 from bs4 import BeautifulSoup
 
@@ -32,7 +31,7 @@ def parse_content(page: str) -> list:
 
     Returns:
     - List[dict]: List of articles, keys 'title' (str), 'url' (str), and 'date' (datetime).
-    """
+    """ # noqa: E501
     if not page:
         return []
 
